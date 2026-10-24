@@ -1,0 +1,141 @@
+{
+  "run_id": "live-01-info-and-quiet",
+  "created": "2026-10-22T21:24:18",
+  "python": "3.9.6",
+  "market": {
+    "a": 2.0,
+    "a0": 0.0,
+    "mu": 0.25,
+    "cost": 1.0,
+    "beta": 100.0,
+    "max_price": 4.51,
+    "bench": {
+      "p_nash": 1.4729266601441577,
+      "p_mono": 1.9249809157124194,
+      "pi_nash": 22.292666007834487,
+      "pi_mono": 33.749045950888096
+    }
+  },
+  "llm_host": "pranav-drshn--ep-deepseek-v4-1-flash-server.us-west.modal.direct",
+  "llm_extra_body": "{\"chat_template_kwargs\": {\"thinking\": false}}",
+  "endpoint_models": [
+    "deepseek-ai/DeepSeek-V4.1-Flash"
+  ],
+  "sessions": [
+    {
+      "started": "2026-10-22T21:24:20",
+      "cmdline": "/Users/pranavdarshan/Downloads/apart26/market_sim/run.py --run-id live-01-info-and-quiet --traders llm --trader-model deepseek-ai/DeepSeek-V4.1-Flash --arms base,base-hidden,fine-quiet --ps 0.3 --episodes 2 --seed 200 --T 60 --history 20 --prefix P1 --concurrency 6 --max-usd 2.0 --progress",
+      "resume": false
+    },
+    {
+      "started": "2026-10-22T21:26:38",
+      "cmdline": "/Users/pranavdarshan/Downloads/apart26/market_sim/run.py --run-id live-01-info-and-quiet --resume --progress",
+      "resume": true
+    },
+    {
+      "started": "2026-10-22T21:27:17",
+      "cmdline": "/Users/pranavdarshan/Downloads/apart26/market_sim/run.py --run-id live-01-info-and-quiet --resume",
+      "resume": true
+    },
+    {
+      "started": "2026-10-22T21:28:41",
+      "cmdline": "/Users/pranavdarshan/Downloads/apart26/market_sim/run.py --run-id live-01-info-and-quiet --resume --force",
+      "resume": true
+    },
+    {
+      "started": "2026-10-22T21:34:49",
+      "cmdline": "/Users/pranavdarshan/Downloads/apart26/market_sim/run.py --run-id live-01-info-and-quiet --resume --episodes 8 --max-usd 8.5 --concurrency 8",
+      "resume": true
+    },
+    {
+      "started": "2026-10-22T22:06:14",
+      "cmdline": "/Users/pranavdarshan/Downloads/apart26/market_sim/run.py --run-id live-01-info-and-quiet --resume --max-usd 10.5 --concurrency 8",
+      "resume": true
+    }
+  ],
+  "protocol": {
+    "traders": "llm",
+    "q_train": 1000000,
+    "q_see": 1.0,
+    "q_online_alpha": 0.15,
+    "flagger": "threshold",
+    "screen_model": "screens.json",
+    "scripted_style": "grim",
+    "mock_deter": 0,
+    "flagger_noise": 0.0,
+    "trader_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "flagger_model": "",
+    "sec_info": "benchmarks",
+    "prefix": "P1",
+    "T": 60,
+    "W": 10,
+    "tau": 0.5,
+    "gamma": 2.0,
+    "k": 3.0,
+    "history": 20,
+    "temperature": 1.0,
+    "prompt_mode": "single",
+    "max_tokens": 1500,
+    "tail": 50,
+    "faithful": false,
+    "obs": "full",
+    "disclose_flagger": false,
+    "usd_per_m": "0.30,1.20",
+    "fine_in_reward": false
+  },
+  "args": {
+    "traders": "llm",
+    "q_train": 1000000,
+    "q_see": 1.0,
+    "q_online_alpha": 0.15,
+    "flagger": "threshold",
+    "screen_model": "screens.json",
+    "match_sec": false,
+    "scripted_style": "grim",
+    "mock_deter": 0,
+    "flagger_noise": 0.0,
+    "trader_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "flagger_model": "",
+    "sec_info": "benchmarks",
+    "arms": "base,base-hidden,fine-quiet",
+    "ps": "0.3",
+    "prefix": "P1",
+    "episodes": 8,
+    "T": 60,
+    "W": 10,
+    "tau": 0.5,
+    "gamma": 2.0,
+    "k": 3.0,
+    "history": 20,
+    "temperature": 1.0,
+    "prompt_mode": "single",
+    "max_tokens": 1500,
+    "tail": 50,
+    "faithful": false,
+    "concurrency": 8,
+    "progress": true,
+    "obs": "full",
+    "disclose_flagger": false,
+    "no_trace": false,
+    "max_usd": 10.5,
+    "usd_per_m": "0.30,1.20",
+    "fine_in_reward": false,
+    "seed": 200,
+    "run_id": "live-01-info-and-quiet",
+    "resume": true,
+    "force": false
+  },
+  "source_sha256": {
+    "llm.py": "246669f14f4311d2",
+    "__init__.py": "e3b0c44298fc1c14",
+    "agents.py": "d9189f4e802a5d2f",
+    "episode.py": "0d009baf0f88e8a6",
+    "market.py": "6005c0871b9e9553",
+    "metrics.py": "0873fde960d8ff44",
+    "qlearn.py": "91ca0733a49fe5b4",
+    "regulators.py": "9efa70420c6f88fc",
+    "replay.py": "369bda3bb14f0a2f",
+    "run.py": "255cd03e50581562",
+    "screens.py": "183d70e7e64c4350"
+  }
+}

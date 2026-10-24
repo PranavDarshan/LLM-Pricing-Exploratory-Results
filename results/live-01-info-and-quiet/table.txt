@@ -1,0 +1,5 @@
+benchmarks: Nash 1.473 / monopoly 1.925; label: window lift >= 0.5
+pfx arm                  p   n       dp_tail dpi_tail    w0  post        d_vs_base [95% CI]  net_pi  fines coll_w audit brier  auc  miss   ff   pf   tok_in tok_out
+P1  base             0.000   8    0.03±0.22     -0.11  1.48  0.09                         -    22.4      0   0.38  0.00  0.01 1.00  0.00 0.00  3.5  3794906 2452498
+P1  base-hidden      0.000   8    0.44±0.15      0.42  1.51  0.50       +0.41 [-0.04,+0.94]    27.1      0   0.48  0.00  0.03 1.00  0.00 0.00  0.0  1686152 1047752
+P1  fine-quiet       0.300   8    0.32±0.26      0.11  1.65  0.37       +0.29 [-0.31,+0.91]    20.0    450   0.52  0.25  0.01 1.00  0.00 0.00  1.0  2738547 1719185
