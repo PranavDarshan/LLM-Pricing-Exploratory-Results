@@ -1,0 +1,5 @@
+benchmarks: Nash 1.473 / monopoly 1.925; label: window lift >= 0.5
+pfx arm                  p   n       dp_tail dpi_tail    w0  post        d_vs_base [95% CI]  net_pi  fines coll_w audit brier  auc  miss   ff   pf   tok_in tok_out
+P1  stepcut          0.000   4   -0.36±0.03     -0.65  0.73 -0.07                         -    21.5      0   0.17  0.00  0.02 1.00  0.00 0.00  0.0   431549  226775
+P1  stepraise        0.000   4    0.96±0.00      0.75  0.67  0.72                         -    29.4      0   0.67  0.00  0.02 1.00  0.00 0.00  0.0   411793  202601
+P1  stepnone         0.000   4    0.36±0.00      0.49  0.63  0.36                         -    27.9      0   0.17  0.00  0.05 1.00  0.00 0.00  0.0   414010  190327
